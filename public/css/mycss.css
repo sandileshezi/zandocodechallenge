@@ -1,0 +1,55 @@
+	.resize{
+	width:65%;
+	height:85%;
+}
+
+.resizeProfilePic{
+	width:45%;
+	height:45%;
+}
+
+#alignDiv{
+	align:center;
+}
+
+.services{
+	text-align: float;
+	padding: 20px;
+}
+
+#divList{
+	display:list-item;
+}
+
+#alignItems{
+	
+align:center-left
+}
+
+.email a{	
+		color:black;	
+}
+
+.email a:hover{
+	color:red;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
