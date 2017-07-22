@@ -16,36 +16,29 @@
     <link rel="stylesheet" type="text/css" href="/css/skins/tango/skin.css" />
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/css/mycss.css" rel="stylesheet">
-    <!--[if lt <div class="fright">
-                            <form action="#" method="post">
-                                <input class="inp_search" name="name" type="text" value="Search the Site" onfocus="if (this.value == 'Search the Site') this.value = '';" onblur="if (this.value == '') this.value = 'Search the Site';" />
-                            </form>
-                        </div> IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-</head>
+   </head>
 <body>
+<div class="page_container">
+    <div class="breadcrumb">
+        <div class="wrap">
+            <div class="container">
+                <h4 class="title"><span>Available Products</span></h4>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="container">
+            <section>
+                <p>
+                </p>
+                <div class="row">
+                    @foreach($products as $key=>$product)
+                        <div class="span4">
+                            <div class="resize">
                                 <img src="{{$product->image_url}}">
                             </div>
                             <br>
                             <label>Price: R {{$product->price}}</label>
-                            <div class="page_container">
-                                <div class="breadcrumb">
-                                    <div class="wrap">
-                                        <div class="container">
-                                            <h4 class="title"><span>Available Products</span></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap">
-                                    <div class="container">
-                                        <section>
-                                            <p>
-                                            </p>
-                                            <div class="row">
-                                                @foreach($products as $key=>$product)
-                                                    <div class="span4">
-                                                        <div class="resize">
                             <label>Name: {{$product->name}}</label>
                             <label>Brand: {{$product->brand}}</label>
                         </div>
